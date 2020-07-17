@@ -1,17 +1,15 @@
 <idea-plugin>
   <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <name>aac_maker</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="softwarekk@hotmail.com" url="http://www.yourcompany.com">Young</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+     现在只生成架构文件 activity/fragment/->viewmodel(data/ui) 和xmL 对应的binding 这几者
     ]]>
   </change-notes>
 
