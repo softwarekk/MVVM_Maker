@@ -26,10 +26,10 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="maker" class="action.AACMakerAction" text="action.AACMakerAction" description="trouble maker ? ">
+    <action id="maker" class="action.AACMakerAction" text="AACMaker" description="trouble maker ? ">
       <add-to-group group-id="NewGroup" anchor="first"/><!--显示的位置-->
       <!--使用的快捷键-->
-      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt M" second-keystroke="shift ctrl alt G"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt M" />
     </action>
   </actions>
 

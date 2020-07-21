@@ -1,6 +1,6 @@
 package ${PACKAGE_NAME}
 
-import com.young.businessmvvm.base.BaseUIViewModel
+import com.young.aac.base.BaseUIViewModel
 
 /**
  * Des

@@ -17,10 +17,7 @@ class ActivityOrFragmentFileBuild : BaseFile {
     private lateinit var originName:String//不带后缀
     private lateinit var targetFileName:String//依赖的layout 名
 
-
-    constructor() : super(){
-
-    }
+    constructor() : super()
 
     override var fileName: String
         get() = buildFileName
@@ -66,12 +63,16 @@ class ActivityOrFragmentFileBuild : BaseFile {
         val bindingName=CommonUtil.getBindingName(targetFileName)
         var uiVMName=CommonUtil.getUIVMName(originName)
         val uiVMNameLower=CommonUtil.toUpperOrNot(uiVMName,false)!!
+        val dataVMName=CommonUtil.getDataVMName(originName)
         val layoutSource=targetFileName
         val packageBinding=CommonUtil.getChoosePackage(actionEvent)+".databinding."+CommonUtil.getBindingName(targetFileName)
         val uiViewModelPath="${CommonUtil.getChoosePackage(actionEvent)}.ui.viewmodel.$uiVMName"
+        val dataViewModelPath="${CommonUtil.getChoosePackage(actionEvent)}.data.viewmodel.$dataVMName"
         maps= hashMapOf("NAME" to originName,
                 "BINDING" to bindingName,
                 "UIVIEWMODEL" to uiVMName,
+                "DATAVIEWMODEL" to dataVMName,
+                "DATAVIEWMODELPATH" to dataViewModelPath,
                 "UIVIEWMODELLOWER" to uiVMNameLower,
                 "PACKAGE_NAME" to  packageName,
                 "LAYOUTRESOURCE" to layoutSource,

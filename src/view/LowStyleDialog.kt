@@ -60,7 +60,7 @@ class LowStyleDialog :JFrame {
         xmlText.font=font
         xmlLeftText.text="xml:"
         xmlLeftText.font=font
-        xmlText.addFocusListener(JTextFieldHintListener(xmlText,"call me xxx_xxx"))
+        xmlText.addFocusListener(JTextFieldHintListener(xmlText,"call me style of xxx_xxx "))
         xmlLeftText.horizontalAlignment=JLabel.CENTER
         xmlLeftText.setPreferredSize(Dimension(150, 50))
         xmlText.horizontalAlignment=JTextField.LEFT

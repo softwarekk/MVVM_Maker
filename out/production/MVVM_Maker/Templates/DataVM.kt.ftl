@@ -1,5 +1,6 @@
 package ${PACKAGE_NAME}
-import com.young.businessmvvm.base.BaseDataViewModel
+
+import com.young.aac.base.BaseDataViewModel
 
 /**
  * Des

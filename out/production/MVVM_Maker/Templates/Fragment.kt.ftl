@@ -1,22 +1,26 @@
 package ${PACKAGE_NAME}
 
-import android.arch.lifecycle.ViewModelProviders
-import com.young.businessmvvm.base.MvvmBaseFragment
+import com.young.aac.base.MvvmBaseFragment
 import ${PACKAGEBINDINGNAME}
 import ${UIVIEWMODELPATH}
+import ${DATAVIEWMODELPATH}
 import ${BASECHOOSEPACKAGE}.BR
 import ${BASECHOOSEPACKAGE}.R
 /**
  * Des
  * Created by ${USER} on ${DATE}
  */
-class ${NAME} : MvvmBaseFragment<${BINDING}, ${UIVIEWMODEL}>(){
+class ${NAME} :  MvvmBaseFragment<${BINDING}, ${UIVIEWMODEL},${DATAVIEWMODEL}>(){
 
- override fun getViewModel(): ${UIVIEWMODEL} {
-        return ViewModelProviders.of(this)[${UIVIEWMODEL}::class.java]
-    }
-    override val bindingVariable: Int
-        get() = BR.${UIVIEWMODEL}
-    override val layoutId: Int
-        get() = R.layout.${LAYOUTRESOURCE}
+
+      override fun getUIViewModel(): ${UIVIEWMODEL} {
+           return getActivityViewModelProvider(requireActivity()).get(${UIVIEWMODEL}::class.java)
+      }
+      override fun getDataViewModel(): ${DATAVIEWMODEL}? {
+           return getActivityViewModelProvider(requireActivity()).get(${DATAVIEWMODEL}::class.java)!!
+      }
+      override val bindingVariable: Int
+      get() = BR.${UIVIEWMODELLOWER}
+      override val layoutId: Int
+      get() = R.layout.${LAYOUTRESOURCE}
 }
