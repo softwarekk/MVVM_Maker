@@ -6,7 +6,7 @@
 其他架构扩建参照：
 
 创建Templates 模板
-https://github.com/softwarekk/MVVM_Maker/blob/master/architecture_img/templates.png
+https://github.com/softwarekk/MVVM_Maker/blob/master/ScreenShots/filebuild.png
 
 创建buildfile 插入数据
-https://github.com/softwarekk/MVVM_Maker/blob/master/architecture_img/templates.png
+https://github.com/softwarekk/MVVM_Maker/blob/master/ScreenShots/templates.png
