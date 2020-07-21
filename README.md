@@ -10,3 +10,5 @@
 
 创建buildfile 插入数据:
 (https://github.com/softwarekk/MVVM_Maker/blob/master/ScreenShots/filebuild.png)
+
+ ![image](https://github.com/softwarekk/MVVM_Maker/blob/master/templates.png)
