@@ -10,5 +10,5 @@
 
 创建buildfile 插入数据:
 (https://github.com/softwarekk/MVVM_Maker/blob/master/%E6%9E%84%E9%80%A0.png)
-(https://github.com/softwarekk/MVVM_Maker/blob/master/fenhelaonong.png)
+
 
